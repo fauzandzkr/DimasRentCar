@@ -7,6 +7,7 @@
 body{
     background-color: #2F3243;
     width: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 /* START Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -156,7 +157,7 @@ body{
 
 .vehicle-card{
     background-color: #f2f2f2;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     border-radius: 20px;
     padding: 5%;
@@ -179,7 +180,93 @@ body{
 .vehicle-card .show-filter .vehicle-filter{
     width: 20px;
     margin-right: 5px;
+
 }
+
+
+
+
+
+
+#filterForm .form-group{
+    width: 100%;
+    background-color: #dcdcdc;
+    margin: 0 1px 30px 1px ;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 0 0 10px 0px;
+}
+#filterForm .form-group .item-title{
+    background-color: #f2f2f2;
+    padding: 3px 8px;
+    border-radius: 17px;
+    position: relative;
+    top: -10px;
+    left: 10px; 
+    border: 2px solid #dcdcdc;
+}
+#filterForm .form-group .checkbox-group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+#filterForm .form-group .checkbox-group div {
+    margin: 5px;
+    
+}
+#filterForm .form-group .checkbox-group div label{
+    cursor: pointer;
+}
+#filterForm .form-group .checkbox-group div input[type="checkbox"]{
+    display: none;
+    outline: none;
+}
+#filterForm .form-group .checkbox-group div label{
+    position: relative;
+    display: inline-block;
+    background-color: #2F3243;
+    color: #dcdcdc;
+    padding: 8px 15px;
+    border-radius: 20px;
+    user-select: none;
+    transition: 0.25s;
+}
+#filterForm .form-group .checkbox-group div input[type="checkbox"]:checked ~ label{
+    color: #FFE243;
+    background-color: #2f3243d7;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+
+
+
+
+#vehicleList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: #FFE243; */
+}
+.card-cars{
+    width: 170px;
+    background-color: #2F3243;
+    margin: 0 0 5px 0;
+}
+.card-cars-border{
+    margin: 0 0 0 10px;
+    background-color: blueviolet;
+    border-left: 4px solid #FFE243;
+}
+.card-cars-border .img-cars{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
 
 
 
@@ -305,7 +392,6 @@ body{
     padding: 17px;
     /* background-color: #2F3243; */
 }
-}
 
 /* END Extra small devices (phones, 600px and down) */
 
@@ -359,8 +445,8 @@ body{
     color: #f2f2f2;
     font-weight: 500;
   } */
-  .popup-container {
-    position: absolute;
+  .popup-container{
+    position: fixed;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .8);
@@ -370,13 +456,16 @@ body{
     opacity: 0;
     pointer-events: none;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
-  .popup-container.active {
+  .popup-container.active{
     opacity: 1;
     pointer-events: auto;
     transition: .4s ease;
   }
-  .popup-container .popup-box {
+  .popup-container .popup-box{
     width: 300px;
     background: #f2f2f2;
     border-radius: 9px;
@@ -410,6 +499,83 @@ body{
     overflow: hidden;
 }
 
-.box{
-    display: none;
+
+
+
+
+
+
+
+.container-filter{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+.container-filter.active{
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
 }
+.container-filter .box-filter{
+    margin: 0 5%;
+    width: 350px;
+    background: #f2f2f2;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 30px 10px 17px 10px;
+    transform: scale(0);
+    /* position: absolute;
+    top:90px ;
+    right: 24px; */
+  }
+.container-filter.active .box-filter {
+    transform: scale(1);
+    transition: .3s ease;
+    /* transition-delay: .1s; */
+  }
+.box-filter .close-filter {
+    width: 100%;
+    height: 45px;
+    background: #6e78ff;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+    margin-top: 25px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* START Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+    .container .filter .item .item-option div label{
+        cursor:;
+    }
+
+} */
+/* END Extra large devices (large laptops and desktops, 1200px and up) */
