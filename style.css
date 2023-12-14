@@ -250,23 +250,104 @@ body{
 }
 .card-cars{
     width: 170px;
+    height: 300px;
+    border-radius: 0 60px 0 25px;
+    display: flex;
+    position: relative;
     background-color: #2F3243;
-    margin: 0 0 5px 0;
+    margin: 10px 0 10px 0;
 }
-.card-cars-border{
-    margin: 0 0 0 10px;
-    background-color: blueviolet;
-    border-left: 4px solid #FFE243;
+.card-cars-border {
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 0 0 0 25px;
+    margin-left: 5%;
+    width: 50px;
+    height: 97%; /* Agar tingginya sesuai dengan card-cars-main */
+    position: absolute;
+    z-index: 1;
+    /* background-color: #545769; */
 }
-.card-cars-border .img-cars{
+.card-cars-main{
+    width: 160px;
+    height: 90%;
+    /* background-color: #6e78ff; */
+    margin: 5% 0 0 10px;
+    justify-content: center;
+}
+
+.card-cars-main .img-cars{
     display: block;
     margin: 0 auto;
+    width:130px;
+    margin-bottom: 7px;
+    margin-top: 0px;
+    /* background-color: #dcdcdc; */
 }
 
-
-
-
-
+.brand{
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    margin-left: 20px;
+    line-height: 8px;
+}
+.model{
+    color: #FFE243;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.7px;
+    margin: 0 0 5px 20px;
+}
+.price{
+    background-color: #FFE243;
+    padding: 5px;
+    text-align: center;
+    margin: 5px 20px 15px 20px;
+    border-radius: 5px;
+    color: #2F3243;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.p-booking{
+    /* background-color: #6e78ff; */
+    text-align: center;
+}
+.card-cars-main .booking{
+    border: 1px solid #FFE243;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin:0px 20px 0 20px;
+    border-radius: 15px;
+}
+.card-card-three-icon{
+    color: #fff;
+    place-items: center;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 20px;
+}
+.transmisi,
+.tahun,
+.tipe{
+    margin: 0 10px 5px 0;
+    place-items: center;
+    /* background-color:#6e78ff; */
+    display: flex;
+}
+.transmisi img,
+.tahun img,
+.tipe img{
+    width: 15px;
+    margin-right: 5px;
+    /* background-color: #dcdcdc; */
+}
 
 
 
@@ -520,6 +601,7 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 3;
   }
 .container-filter.active{
     opacity: 1;
