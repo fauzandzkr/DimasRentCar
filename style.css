@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background-color: #2F3243;
     width: 100%;
@@ -162,6 +165,10 @@ body{
     border-radius: 20px;
     padding: 5%;
 }
+.vehicle-card-btn{
+    display: flex;
+    justify-content: space-between;
+}
 .vehicle-card .show-filter{
     /* border: none; */
     margin: 0 0 5% 0;
@@ -170,17 +177,46 @@ body{
     place-items: center;
     height: 40px;
     background-color: #f2f2f2;
-    border: 1.5px solid #CFCFCF;
-    box-shadow: 7px 6px 13px rgb(47, 50, 67, 0.2);
-    border-radius: 9px;
+    border: 1.5px solid #cfcfcf;
+    box-shadow: 4px 4px 10px rgb(47, 50, 67, 0.2);
+    border-radius: 13px;
     font-size: 18px;
     font-weight: 500;
     color: #2F3243;
 }
-.vehicle-card .show-filter .vehicle-filter{
+.vehicle-card .show-motor{
+    margin: 0 0 5% 0;
+    padding:8px 15px 8px 10px;
+    display: flex;
+    place-items: center;
+    height: 40px;
+    background-color: #f2f2f2;
+    border: 1.5px solid #CFCFCF;
+    /* box-shadow: 7px 6px 13px rgb(47, 50, 67, 0.2); */
+    border-radius: 13px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F3243;
+}
+.vehicle-card .vehicle-filter,
+.vehicle-card .icon-motor{
     width: 20px;
     margin-right: 5px;
-
+}
+.vehicle-card .motor-ask{
+    color: #2F3243;
+    font-size: 16px;
+    /* background-color: #FFE243; */
+    margin: 0 0 2px 0;
+    padding: 0 2px;
+}
+.vehicle-card .motor-ask .motor-ask-btn{
+    font-weight:bold;
+    text-decoration: underline;
+    color: #2F3243;
+    font-size: 18px;
+    line-height: 1px;
+    
 }
 
 
@@ -611,7 +647,7 @@ body{
 }
 .container-filter .box-filter{
     margin: 0 5%;
-    width: 350px;
+    width: 100%;
     background: #f2f2f2;
     border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -626,31 +662,88 @@ body{
     transition: .3s ease;
     /* transition-delay: .1s; */
   }
-.box-filter .close-filter {
-    width: 100%;
+.box-filter .popup-submit{
+    display: flex;
+    justify-content: space-around;
+}
+.box-filter .close-cancel,
+.box-filter .close-filter{
+    margin: 0 0 10px 0 ;
+    width: 45%;
     height: 45px;
-    background: #6e78ff;
     border-radius: 6px;
     border: none;
     outline: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .1); */
     cursor: pointer;
     font-size: 18px;
     color: #f2f2f2;
     font-weight: 500;
-    margin-top: 25px;
 }
+.box-filter .close-cancel{
+    /* background: #fa3f3f; */
+    color: #fa3f3f;
+    border:1px solid #fa3f3f;
+}
+.box-filter .close-filter{
+    background: #6c82ff;
+}
+
+.not-found{
+    /* margin: 30px 0 30px 0; */
+    display: block;
+    margin: 30px auto;
+    /* color: red; */
+    width: 300px;
+    /* display: flex;
+    justify-content: center;
+    background-color: #FFE243;
+    text-align: center;
+    align-items: center; */
 }
 
 
 
+#progress.noscrolltop,
+#progress-value.noscrolltop{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#progress {
+    opacity: 1;
+    z-index: 5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  #progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+  }
 
 
-
-
-
-
-
+  .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+  }
 
 
 
