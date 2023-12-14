@@ -98,19 +98,19 @@
                         <label class="item-title">Merek Mobil</label>
                         <div class="checkbox-group">
                             <div>
-                                <input type="checkbox" id="daihatsu" name="carBrand" value="daihatsu">
+                                <input type="checkbox" id="daihatsu" name="carBrand" value="Daihatsu">
                                 <label for="daihatsu">Daihatsu</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="honda" name="carBrand" value="honda">
+                                <input type="checkbox" id="honda" name="carBrand" value="Honda">
                                 <label for="honda">Honda</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="mitsubishi" name="carBrand" value="mitsubishi">
+                                <input type="checkbox" id="mitsubishi" name="carBrand" value="Mitsubishi">
                                 <label for="mitsubishi">Mitsubishi</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="toyota" name="carBrand" value="toyota">
+                                <input type="checkbox" id="toyota" name="carBrand" value="Toyota">
                                 <label for="toyota">Toyota</label>
                             </div>
                             <div>
@@ -129,23 +129,23 @@
                                 <label for="selectAllCarType">Pilih Semua</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="lcgc" name="carType" value="lcgc">
+                                <input type="checkbox" id="lcgc" name="carType" value="LCGC">
                                 <label for="lcgc">LCGC</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="mpv" name="carType" value="mpv">
+                                <input type="checkbox" id="mpv" name="carType" value="MPV">
                                 <label for="mpv">MPV</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="luxuryMpv" name="carType" value="luxuryMpv">
+                                <input type="checkbox" id="luxuryMpv" name="carType" value="Luxury-MPV">
                                 <label for="luxuryMpv">Luxury MPV</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="hatchback" name="carType" value="hatchback">
+                                <input type="checkbox" id="hatchback" name="carType" value="Hatchback">
                                 <label for="hatchback">Hatchback</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="suv" name="carType" value="suv">
+                                <input type="checkbox" id="suv" name="carType" value="SUV">
                                 <label for="suv">SUV</label>
                             </div>
                         </div>
@@ -159,11 +159,11 @@
                                 <label for="selectAllTransmission">Pilih Semua</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="manual" name="transmission" value="manual">
+                                <input type="checkbox" id="manual" name="transmission" value="Manual">
                                 <label for="manual">Manual</label>
                             </div>
                             <div>
-                                <input type="checkbox" id="automatic" name="transmission" value="automatic">
+                                <input type="checkbox" id="automatic" name="transmission" value="Automatic">
                                 <label for="automatic">Automatic</label>
                             </div>
                         </div>
@@ -171,82 +171,9 @@
             
                     <button class="close-filter" type="submit">Filter</button>
                 </form>
-                <!-- <div class="container">
-                    <form class="filter">
-                        <div class="item">
-                            <label for="" class="item-title">Merek Mobil</label>
-                            <div class="item-option">
-                                <div>
-                                    <label for="">
-                                        <input type="checkbox" name="category" value="toyota"> <span>Toyota</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label for="">
-                                        <input type="checkbox" name="category" value="daihatsu"> <span>Daihatsu</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label for="">
-                                        <input type="checkbox" name="category" value="honda"> <span>Honda</span>
-                                    </label>
-                                </div>
-                                <div>
-                                    <label for="">
-                                        <input type="checkbox" name="category" value="mitsubishi"> <span>Mitsubishi</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <label>Category</label>
-                            <select name="category">
-                                <option value="">---</option>
-                                <option value="toyota">Toyota</option>
-                                <option value="Shirt">Honda</option>
-                                <option value="Polo">Daihatsu</option>
-                            </select>
-                        </div>
-                        <div class="item">
-                            <label>Color</label>
-                            <select name="color">
-                                <option value="">---</option>
-                                <option value="white">white</option>
-                                <option value="black">black</option>
-                                <option value="grey">grey</option>
-                                <option value="blue">blue</option>
-                                <option value="brown">brown</option>
-                            </select>
-                        </div>
-                        <div class="item">
-                            <label>Name</label>
-                            <input name="name" type="text">
-                        </div>
-                        <div class="item">
-                            <label>Min Price</label>
-                            <input name="minPrice" type="number">
-                        </div>
-                        <div class="item">
-                            <label>Max Price</label>
-                            <input name="maxPrice" type="number">
-                        </div>
-                        <div class="item submit">
-                            <button>Search</button>
-                        </div>
-                    </form>
-                    <div class="countResults">
-                        Found <b id="count">5</b> results
-                    </div>
-                </div> -->
-                
             </div>
         </div>
-        <!-- <div id="list">
-            
-        </div> -->
-        <h1>Filter Kendaraan</h1>
-    
-    
+      
         <div id="vehicleList">
             <!-- Daftar kendaraan akan ditampilkan di sini -->
         </div>
@@ -427,25 +354,37 @@
     const vehicleList = document.getElementById("vehicleList");
 
     const vehicles = [
-        { brand: "daihatsu", type: "lcgc", transmission: "manual", model: "AYLA", year: 2022, price: "300.000", image: "/assets/img/car-toyota-avanza.png"},
-        { brand: "daihatsu", type: "lcgc", transmission: "manual", model: "SIGRA", year: 2022, price: "300.000" },
-        { brand: "daihatsu", type: "lcgc", transmission: "manual", model: "TERIOS", year: 2022, price: "300.000" },
-        { brand: "daihatsu", type: "MVP", transmission: "manual", model: "XENIA", year: 2022, price: "300.000" },
+        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "AYLA", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-daihatsu-ayla.png"},
+        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "AYLA", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-daihatsu-ayla.png"},
+        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "SIGRA", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-daihatsu-sigra.png"},
+        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "SIGRA", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-daihatsu-sigra.png" },
+        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "TERIOS", year: 2022, price: "Rp400k/hari", image: "/assets/img/car-daihatsu-terios.png"},
+        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "TERIOS", year: 2022, price: "Rp450k/hari", image: "/assets/img/car-daihatsu-terios.png"},
+        { brand: "Daihatsu", type: "MVP", transmission: "Manual",    model: "XENIA", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-daihatsu-xenia.png"},
+        { brand: "Daihatsu", type: "MVP", transmission: "Automatic",    model: "XENIA", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-daihatsu-xenia.png"},
         
-        { brand: "honda", type: "mpv", transmission: "automatic", model: "BRIO", year: 2022, price: "300.000" },
-        { brand: "honda", type: "mpv", transmission: "automatic", model: "JAZZ", year: 2022, price: "300.000" },
-        { brand: "honda", type: "mpv", transmission: "automatic", model: "MOBILIO", year: 2022, price: "300.000" },
+        { brand: "Honda", type: "MPV", transmission: "Manual", model: "Brio", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-honda-brio.png"},
+        { brand: "Honda", type: "MPV", transmission: "Automatic", model: "Brio", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-honda-brio.png"},
+        { brand: "Honda", type: "MPV", transmission: "Manual", model: "Jazz", year: 2022, price: "Rp400k/hari", image: "/assets/img/car-honda-jazz.png"},
+        { brand: "Honda", type: "MPV", transmission: "Automatic", model: "Jazz", year: 2022, price: "Rp450k/hari", image: "/assets/img/car-honda-jazz.png"},
+        { brand: "Honda", type: "MPV", transmission: "Manual", model: "Mobilio", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-honda-mobilio.png"},
+        { brand: "Honda", type: "MPV", transmission: "Automatic", model: "Mobilio", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-honda-mobilio.png"},
         
-        { brand: "mitsubishi", type: "mpv", transmission: "automatic", model: "PAJERO", year: 2022, price: "300.000" },
+        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Agya", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-toyota-agya.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Agya", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-toyota-agya.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Avanza", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-toyota-avanza.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Avanza", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-toyota-avanza.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Calya", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-toyota-calya.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Calya", year: 2022, price: "Rp350k/hari", image: "/assets/img/car-toyota-calya.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Rush", year: 2022, price: "Rp400k/hari", image: "/assets/img/car-toyota-rush.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Rush", year: 2022, price: "Rp450k/hari", image: "/assets/img/car-toyota-rush.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Yaris", year: 2022, price: "Rp400k/hari", image: "/assets/img/car-toyota-yaris.png" },
+        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Yaris", year: 2022, price: "Rp450k/hari", image: "/assets/img/car-toyota-yaris.png" },
+        { brand: "Toyota", type: "Luxury-MVP", transmission: "-", model: "Alphard", year: "-", price: "-", image: "/assets/img/car-toyota-alphard.png"},
+        { brand: "Toyota", type: "LCGC", transmission: "-", model: "Innova", year: 2022, price: "Rp750k/hari", image: "/assets/img/car-toyota-innova.png"},
+        { brand: "Toyota", type: "MPV", transmission: "-", model: "Fortuner", year: 2022, price: "Rp300k/hari", image: "/assets/img/car-toyota-fortuner.png"},
 
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "AGYA", year: 2022, price: "300.000" },
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "ALPHARD", year: 2022, price: "300.000" },
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "AVANZA", year: 2022, price: "300.000"},
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "CALYA", year: 2022, price: "300.000" },
-        { brand: "toyota", type: "mpv", transmission: "automatic", model: "FORTUNER", year: 2022, price: "300.000" },
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "INNOVA", year: 2022, price: "300.000" },
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "RUSH", year: 2022, price: "300.000" },
-        { brand: "toyota", type: "lcgc", transmission: "manual", model: "YARIS", year: 2022, price: "300.000" },
+        { brand: "Mitsubishi", type: "SUV", transmission: "-", model: "Pajero", year: "-", price: "Rp300k/hari", image: "/assets/img/car-mitsubishi-pajero.png" },
         // Add other vehicle data as needed
     ];
 
@@ -515,14 +454,36 @@
             vehicleItem.classList.add("vehicle-item");
             vehicleItem.innerHTML = `
                     <div class="card-cars">
-                        <div class="card-cars-border"
-                            <p><img src="${vehicle.image}" width="100" class="img-cars"></p>
-                            <p><strong>Model:</strong> ${vehicle.model}</p>
-                            <p><strong>Merek:</strong> ${vehicle.brand}</p>
-                            <p><strong>Jenis:</strong> ${vehicle.type}</p>
-                            <p><strong>Transmisi:</strong> ${vehicle.transmission}</p>
-                            <p><strong>Tahun:</strong> ${vehicle.year}</p>
-                            <p><strong>Harga:</strong> ${vehicle.price}</p>
+                        <div class="card-cars-border">
+                            
+                        </div>
+                        <div class="card-cars-main">
+                            <p><img src="${vehicle.image}" class="img-cars"></p>
+                            <p class="brand">${vehicle.brand}</p>
+                            <p class="model">${vehicle.model}</p>
+
+                            <div class="card-card-three-icon">
+                                <div class="tipe">
+                                    <img src="assets/icon/vehicle.png">
+                                    ${vehicle.type}
+                                </div>
+                                <div class="tahun">
+                                    <img src="assets/icon/calendar_ffffff.png">
+                                    ${vehicle.year}   
+                                </div>
+                                <div class="transmisi">
+                                    <img src="assets/icon/transmisi.png">
+                                    ${vehicle.transmission}   
+                                </div>
+                            </div>
+                      
+                            <p class="price">${vehicle.price}</p>
+                            
+                            
+                            <p class="p-booking">
+                                <a  class="booking" href="https://www.iconfinder.com/search?q=calendar">Pesan</a>
+                            </p>
+                            
                         </div>
                     </div>
             `;
@@ -540,11 +501,6 @@
         });
     }
 });
-
-
-
-
-
 
 
     </script>
