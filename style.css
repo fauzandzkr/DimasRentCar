@@ -12,6 +12,12 @@ body{
     width: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+.main-desc-coming-soon, 
+.card-cars-border-coming-soon,
+.img-cars-coming-soon{
+    opacity: 0.1;
+}
+
 
 /* DONE - START Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -403,7 +409,17 @@ body{
         background-color: #2F3243;
         margin: 10px 0 10px 0;
     }
-    .card-cars-border {
+    .card-cars-coming-soon{
+        width: 43vw;
+        /* height: 38vh; */
+        border-radius: 0 60px 0 25px;
+        display: flex;
+        position: relative;
+        background-color: #000000ef;
+        margin: 10px 0 10px 0;
+    }
+    .card-cars-border,
+    .card-cars-border-coming-soon {
         border-left: 3px solid #ffffff;
         border-bottom: 3px solid #ffffff;
         border-radius: 0 0 0 25px;
@@ -424,7 +440,8 @@ body{
         /* justify-content: center; */
     }
 
-    .card-cars-main .img-cars{
+    .card-cars-main .img-cars,
+    .img-cars-coming-soon{
         display: block;
         margin: 0 auto;
         width:30vw;
@@ -432,7 +449,11 @@ body{
         margin-top: 0px;
         /* background-color: #dcdcdc; */
     }
-
+    .main-desc-coming-soon, 
+    .card-cars-border-coming-soon,
+    .img-cars-coming-soon{
+        opacity: 0.1;
+    }
     .brand{
         color:#fff;
         font-weight: bold;
@@ -444,7 +465,7 @@ body{
     .model{
         color: #FFE243;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 7.5vw;
         letter-spacing: 0.7px;
         margin: 0 0 5px 20px;
     }
@@ -459,7 +480,11 @@ body{
         font-weight: bold;
         font-size: 4.5vw;
     }
-    .p-booking{
+    .p-booking-coming-soon2{
+        opacity: 0.2;
+    }
+    .p-booking,
+    .p-booking-coming-soon2{
         /* background-color: #6e78ff; */
         text-align: center;
     }
@@ -472,6 +497,19 @@ body{
         padding: 1vw 7vw;
         /* margin:0px 20px 0 20px; */
         border-radius: 15px;
+    }
+    .p-booking-coming-soon{
+        /* background-color: #6e78ff; */
+        /* width: 20vw; */
+        text-align: center;
+        position: absolute;
+        right: 2vw;
+        top: 25vw;
+        opacity: 1;
+        color: #ffff;
+        /* border: 1px solid #fff; */
+        font-size: 6vw;
+        font-weight: 500;
     }
     .card-card-three-icon{
         color: #fff;
@@ -598,7 +636,7 @@ body{
     }
     .footer .footer-contact .footer-contact-wa1,
     .footer .footer-contact .footer-contact-wa2,
-    .footer .footer-contact .footer-contact-instagram{
+    .footer .footer-contact .footer-contact-instagram a{
         display: flex;
         place-items: center;
         padding-top: 8px;
@@ -609,8 +647,12 @@ body{
     .footer .footer-contact .footer-contact-instagram p{
         padding-left: 10px;
         font-size: 4.5vw;
-        color: #fff;
-        font-weight: 400;
+        color: #ffffff;
+        font-weight: 400;   
+        text-decoration: none;
+    }
+    .footer .footer-contact .footer-contact-instagram a{
+        text-decoration: none;
     }
     .footer .footer-location{
         padding-top: 30px;
@@ -1080,7 +1122,17 @@ body{
         background-color: #2F3243;
         margin: 10px 0 10px 0;
     }
-    .card-cars-border {
+    .card-cars-coming-soon{
+        width: 43vw;
+        /* height: 38vh; */
+        border-radius: 0 60px 0 25px;
+        display: flex;
+        position: relative;
+        background-color: #000000ef;
+        margin: 10px 0 10px 0;
+    }
+    .card-cars-border,
+    .card-cars-border-coming-soon{
         border-left: 3px solid #ffffff;
         border-bottom: 3px solid #ffffff;
         border-radius: 0 0 0 25px;
@@ -1101,7 +1153,8 @@ body{
         /* justify-content: center; */
     }
 
-    .card-cars-main .img-cars{
+    .card-cars-main .img-cars,
+    .img-cars-coming-soon{
         display: block;
         margin: 0 auto;
         width:30vw;
@@ -1109,7 +1162,11 @@ body{
         margin-top: 0px;
         /* background-color: #dcdcdc; */
     }
-
+    .main-desc-coming-soon, 
+    .card-cars-border-coming-soon,
+    .img-cars-coming-soon{
+        opacity: 0.1;
+    }
     .brand{
         color:#fff;
         font-weight: bold;
@@ -1136,7 +1193,24 @@ body{
         font-weight: bold;
         font-size: 4.5vw;
     }
-    .p-booking{
+    .p-booking-coming-soon{
+        /* background-color: #6e78ff; */
+        width: 15vw;
+        text-align: center;
+        position: absolute;
+        left: 2vw;
+        top: 12vw;
+        opacity: 1;
+        color: #ffff;
+        /* border: 1px solid #fff; */
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+    .p-booking-coming-soon2{
+        opacity: 0.2;
+    }
+    .p-booking,
+    .p-booking-coming-soon2{
         /* background-color: #6e78ff; */
         text-align: center;
     }
@@ -1275,7 +1349,7 @@ body{
     }
     .footer .footer-contact .footer-contact-wa1,
     .footer .footer-contact .footer-contact-wa2,
-    .footer .footer-contact .footer-contact-instagram{
+    .footer .footer-contact .footer-contact-instagram a{
         display: flex;
         place-items: center;
         padding-top: 8px;
@@ -1288,6 +1362,9 @@ body{
         font-size: 4.5vw;
         color: #fff;
         font-weight: 400;
+    }
+    .footer .footer-contact .footer-contact-instagram a{
+        text-decoration: none;
     }
     .footer .footer-location{
         padding-top: 30px;
@@ -1762,7 +1839,17 @@ body{
         background-color: #2F3243;
         margin: 10px 0px 10px 0;
     }
-    .card-cars-border {
+    .card-cars-coming-soon{
+        width: 21vw;
+        /* height: 38vh; */
+        border-radius: 0 60px 0 25px;
+        display: flex;
+        position: relative;
+        background-color: #000000ef;
+        margin: 10px 0px 10px 0;
+    }
+    .card-cars-border,
+    .card-cars-border-coming-soon {
         border-left: 3px solid #ffffff;
         border-bottom: 3px solid #ffffff;
         border-radius: 0 0 0 25px;
@@ -1783,7 +1870,8 @@ body{
         /* justify-content: center; */
     }
 
-    .card-cars-main .img-cars{
+    .card-cars-main .img-cars,
+    .img-cars-coming-soon{
         display: block;
         margin: 0 auto;
         width:15vw;
@@ -1818,9 +1906,26 @@ body{
         font-weight: bold;
         font-size: 2vw;
     }
-    .p-booking{
+    .p-booking-coming-soon2{
+        opacity: 0.2;
+    }
+    .p-booking,
+    .p-booking-coming-soon2{
         /* background-color: #6e78ff; */
         text-align: center;
+    }
+    .p-booking-coming-soon{
+        /* background-color: #6e78ff; */
+        width: 15vw;
+        text-align: center;
+        position: absolute;
+        left: 2vw;
+        top: 12vw;
+        opacity: 1;
+        color: #ffff;
+        /* border: 1px solid #fff; */
+        font-size: 3.5vw;
+        font-weight: 500;
     }
     .card-cars-main .booking{
         border: 1px solid #FFE243;
@@ -1855,6 +1960,10 @@ body{
         width: 15px;
         margin-right: 5px;
         /* background-color: #dcdcdc; */
+    }
+    .tahun{
+        width: 6vw;
+        /* background-color: violet; */
     }
 
 
@@ -1960,7 +2069,7 @@ body{
     }
     .footer .footer-contact .footer-contact-wa1,
     .footer .footer-contact .footer-contact-wa2,
-    .footer .footer-contact .footer-contact-instagram{
+    .footer .footer-contact .footer-contact-instagram a{
         display: flex;
         place-items: center;
         padding-top: 8px;
@@ -1973,6 +2082,9 @@ body{
         font-size: 4vw;
         color: #fff;
         font-weight: 400;
+    }
+    .footer .footer-contact .footer-contact-instagram a{
+        text-decoration: none;
     }
     .footer .footer-location{
         padding-top: 30px;
@@ -2421,20 +2533,30 @@ body{
         display: flex;
         position: relative;
         background-color: #2F3243;
-        margin: 10px 0px 10px 0;
+        margin: 10px 1.2vw 10px 0;
+        box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    .card-cars-coming-soon{
+        width: 21vw;
+        /* height: 38vh; */
+        border-radius: 0 60px 0 25px;
+        display: flex;
+        position: relative;
+        background-color: #000000ef;
+        margin: 10px 1.2vw 10px 0;
         box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.5);
     }
     .card-cars:hover{
         background: #000000ef;
         .card-cars-border, .main-desc, .img-cars {
-            opacity: .2;
+            opacity:.2;
         }
         .p-booking{
             /* background-color: #6e78ff; */
             text-align: center;
             position: absolute;
             left: 5.5vw;
-            top: 4vw;
+            place-items: center;
             opacity: 1;
         }
         .card-cars-main .booking{
@@ -2449,13 +2571,33 @@ body{
             font-size: 3vh;
             transition: all 0.2s ease-in;
             font-weight: 600;
+            /* background-color: yellow; */
         }
         .card-cars-main .booking:hover{
             background-color: #FFE243;
             color: #2F3243;
         }
     }
-    .card-cars-border {
+
+    .main-desc-coming-soon, 
+    .card-cars-border-coming-soon,
+    .img-cars-coming-soon{
+        opacity: 0.1;
+    }
+    .p-booking-coming-soon{
+        /* background-color: #6e78ff; */
+        text-align: center;
+        position: absolute;
+        left: 3.5vw;
+        top: 3.5vw;
+        opacity: 1;
+        color: #ffff;
+        /* border: 1px solid #fff; */
+        font-size: 1.7vw;
+        font-weight: 500;
+    }
+    .card-cars-border,
+    .card-cars-border-coming-soon {
         border-left: 3px solid #ffffff;
         border-bottom: 3px solid #ffffff;
         border-radius: 0 0 0 25px;
@@ -2466,6 +2608,7 @@ body{
         z-index: 1;
         /* background-color: #545769; */
     }
+   
     .card-cars-main{
         width: 40vw;
         /* height: 95%; */
@@ -2478,7 +2621,8 @@ body{
         align-items: center;
     }
 
-    .card-cars-main .img-cars{
+    .card-cars-main .img-cars,
+    .img-cars-coming-soon{
         display: block;
         margin: 0 auto;
         width:8vw;
@@ -2515,6 +2659,9 @@ body{
         font-size: 1.3vw;
     }
 
+    .p-booking-coming-soon2{
+        display: none;
+    }
     .p-booking{
         /* background-color: #6e78ff; */
         text-align: center;
@@ -2545,7 +2692,10 @@ body{
         margin-right: 5px;
         /* background-color: #dcdcdc; */
     }
-
+    .tahun{
+        width: 4vw;
+        /* background-color: violet; */
+    }
 
 
 
@@ -2701,7 +2851,7 @@ body{
     }
     .footer .footer-contact .footer-contact-wa1,
     .footer .footer-contact .footer-contact-wa2,
-    .footer .footer-contact .footer-contact-instagram{
+    .footer .footer-contact .footer-contact-instagram a{
         display: flex;
         place-items: center;
         padding-top: 8px;
@@ -2714,6 +2864,9 @@ body{
         font-size: 1.3vw;
         color: #fff;
         font-weight: 400;
+    }
+    .footer .footer-contact .footer-contact-instagram a{
+        text-decoration: none;
     }
     .footer .footer-location{
         /* padding-top: 30px; */
