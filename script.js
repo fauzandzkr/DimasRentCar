@@ -320,7 +320,7 @@ let progressValue = document.getElementById("progress-value");
                             </div>
 
                             <p class="p-booking">
-                                <a  class="booking" href="https://www.iconfinder.com/search?q=calendar">Pesan</a>
+                                <a  class="booking" href="https://wa.me/6287869474549?text=Hai%2C%20apakah%20mobil%20${vehicle.model}%20tersedia%3F">Pesan</a>
                             </p>
                             
                         </div>
@@ -381,7 +381,7 @@ const motor = [
                             <p class="price">${motorItem.price}</p>
                         </div>
                         <p class="p-booking">
-                            <a class="booking" href="https://www.iconfinder.com/search?q=calendar">Pesan</a>
+                            <a class="booking" href="https://wa.me/6287869474549?text=Hai%2C%20apakah%20motor%20${motorItem.model}%20tersedia%3F">Pesan</a>
                         </p>
                     </div>
                 </div>
