@@ -146,37 +146,37 @@ let progressValue = document.getElementById("progress-value");
     const vehicleList = document.getElementById("vehicleList");
 
     const vehicles = [
-        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "AYLA", year: 2022, price: "Rp300k/hari", image: "assets/img/car-daihatsu-ayla.png"},
-        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "AYLA", year: 2022, price: "Rp350k/hari", image: "assets/img/car-daihatsu-ayla.png"},
-        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "SIGRA", year: 2022, price: "Rp300k/hari", image: "assets/img/car-daihatsu-sigra.png"},
-        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "SIGRA", year: 2022, price: "Rp350k/hari", image: "assets/img/car-daihatsu-sigra.png" },
-        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "TERIOS", year: 2022, price: "Rp400k/hari", image: "assets/img/car-daihatsu-terios.png"},
-        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "TERIOS", year: 2022, price: "Rp450k/hari", image: "assets/img/car-daihatsu-terios.png"},
-        { brand: "Daihatsu", type: "MVP", transmission: "Manual",    model: "XENIA", year: 2022, price: "Rp300k/hari", image: "assets/img/car-daihatsu-xenia.png"},
-        { brand: "Daihatsu", type: "MVP", transmission: "Automatic",    model: "XENIA", year: 2022, price: "Rp350k/hari", image: "assets/img/car-daihatsu-xenia.png"},
+        { brand: "Daihatsu", type: "LCGC", transmission:"Manual",    model: "Ayla", year: 2022, price: "Rp300k/hari", image: "assets/img/car-daihatsu-ayla.png"},
+        { brand: "Daihatsu", type: "LCGC", transmission:"Automatic", model: "Ayla", year: 2022, price: "Rp350k/hari", image: "assets/img/car-daihatsu-ayla.png"},
+        { brand: "Daihatsu", type: "MPV", transmission:"Manual",    model: "Sigra", year: 2022, price: "Rp300k/hari", image: "assets/img/car-daihatsu-sigra.png"},
+        { brand: "Daihatsu", type: "MPV", transmission:"Automatic", model: "Sigra", year: 2022, price: "Rp350k/hari", image: "assets/img/car-daihatsu-sigra.png" },
+        { brand: "Daihatsu", type: "SUV", transmission:"Manual",    model: "Terios", year: 2022, price: "Rp400k/hari", image: "assets/img/car-daihatsu-terios.png"},
+        { brand: "Daihatsu", type: "SUV", transmission:"Automatic", model: "Terios", year: 2022, price: "Rp450k/hari", image: "assets/img/car-daihatsu-terios.png"},
+        { brand: "Daihatsu", type: "MPV", transmission: "Manual",    model: "Xenia", year: 2022, price: "Rp300k/hari", image: "assets/img/car-daihatsu-xenia.png"},
+        { brand: "Daihatsu", type: "MPV", transmission: "Automatic",    model: "Xenia", year: 2022, price: "Rp350k/hari", image: "assets/img/car-daihatsu-xenia.png"},
         
-        { brand: "Honda", type: "MPV", transmission: "Manual", model: "Brio", year: 2022, price: "Rp300k/hari", image: "assets/img/car-honda-brio.png"},
-        { brand: "Honda", type: "MPV", transmission: "Automatic", model: "Brio", year: 2022, price: "Rp350k/hari", image: "assets/img/car-honda-brio.png"},
-        { brand: "Honda", type: "MPV", transmission: "Manual", model: "Jazz", year: 2022, price: "Rp400k/hari", image: "assets/img/car-honda-jazz.png"},
-        { brand: "Honda", type: "MPV", transmission: "Automatic", model: "Jazz", year: 2022, price: "Rp450k/hari", image: "assets/img/car-honda-jazz.png"},
+        { brand: "Honda", type: "Hatchback", transmission: "Manual", model: "Brio", year: 2022, price: "Rp300k/hari", image: "assets/img/car-honda-brio.png"},
+        { brand: "Honda", type: "Hatchback", transmission: "Automatic", model: "Brio", year: 2022, price: "Rp350k/hari", image: "assets/img/car-honda-brio.png"},
+        { brand: "Honda", type: "Hatchback", transmission: "Manual", model: "Jazz", year: 2022, price: "Rp400k/hari", image: "assets/img/car-honda-jazz.png"},
+        { brand: "Honda", type: "Hatchback", transmission: "Automatic", model: "Jazz", year: 2022, price: "Rp450k/hari", image: "assets/img/car-honda-jazz.png"},
         { brand: "Honda", type: "MPV", transmission: "Manual", model: "Mobilio", year: 2022, price: "Rp300k/hari", image: "assets/img/car-honda-mobilio.png"},
         { brand: "Honda", type: "MPV", transmission: "Automatic", model: "Mobilio", year: 2022, price: "Rp350k/hari", image: "assets/img/car-honda-mobilio.png"},
         
         { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Agya", year: 2022, price: "Rp300k/hari", image: "assets/img/car-toyota-agya.png"},
         { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Agya", year: 2022, price: "Rp350k/hari", image: "assets/img/car-toyota-agya.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Avanza", year: 2022, price: "Rp300k/hari", image: "assets/img/car-toyota-avanza.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Avanza", year: 2022, price: "Rp350k/hari", image: "assets/img/car-toyota-avanza.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Calya", year: 2022, price: "Rp300k/hari", image: "assets/img/car-toyota-calya.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Calya", year: 2022, price: "Rp350k/hari", image: "assets/img/car-toyota-calya.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Rush", year: 2022, price: "Rp400k/hari", image: "assets/img/car-toyota-rush.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Rush", year: 2022, price: "Rp450k/hari", image: "assets/img/car-toyota-rush.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "Manual", model: "Yaris", year: 2022, price: "Rp400k/hari", image: "assets/img/car-toyota-yaris.png" },
-        { brand: "Toyota", type: "LCGC", transmission: "Automatic", model: "Yaris", year: 2022, price: "Rp450k/hari", image: "assets/img/car-toyota-yaris.png" },
-        { brand: "Toyota", type: "Luxury-MVP", transmission: "-", model: "Alphard", year: "-", price: "-", image: "assets/img/car-toyota-alphard.png"},
-        { brand: "Toyota", type: "LCGC", transmission: "-", model: "Innova", year: 2022, price: "Rp750k/hari", image: "assets/img/car-toyota-innova.png"},
-        { brand: "Toyota", type: "MPV", transmission: "-", model: "Fortuner", year: 2022, price: "Rp300k/hari", image: "assets/img/car-toyota-fortuner.png"},
+        { brand: "Toyota", type: "MPV", transmission: "Manual", model: "Avanza", year: 2022, price: "Rp300k/hari", image: "assets/img/car-toyota-avanza.png"},
+        { brand: "Toyota", type: "MPV", transmission: "Automatic", model: "Avanza", year: 2022, price: "Rp350k/hari", image: "assets/img/car-toyota-avanza.png"},
+        { brand: "Toyota", type: "MPV", transmission: "Manual", model: "Calya", year: 2022, price: "Rp300k/hari", image: "assets/img/car-toyota-calya.png"},
+        { brand: "Toyota", type: "MPV", transmission: "Automatic", model: "Calya", year: 2022, price: "Rp350k/hari", image: "assets/img/car-toyota-calya.png"},
+        { brand: "Toyota", type: "SUV", transmission: "Manual", model: "Rush", year: 2022, price: "Rp400k/hari", image: "assets/img/car-toyota-rush.png"},
+        { brand: "Toyota", type: "SUV", transmission: "Automatic", model: "Rush", year: 2022, price: "Rp450k/hari", image: "assets/img/car-toyota-rush.png"},
+        { brand: "Toyota", type: "Hatchback", transmission: "Manual", model: "Yaris", year: 2022, price: "Rp400k/hari", image: "assets/img/car-toyota-yaris.png" },
+        { brand: "Toyota", type: "Hatchback", transmission: "Automatic", model: "Yaris", year: 2022, price: "Rp450k/hari", image: "assets/img/car-toyota-yaris.png" },
+        { brand: "Toyota", type: "MPV", transmission: "-", model: "Innova", year: 2022, price: "Rp750k/hari", image: "assets/img/car-toyota-innova.png"},
+        { brand: "Toyota", type: "MPV", transmission: "-", model: "Alphard", year: "-", price: "-", image: "assets/img/car-toyota-alphard.png"},
+        { brand: "Toyota", type: "SUV", transmission: "-", model: "Fortuner", year: "-", price: "-", image: "assets/img/car-toyota-fortuner.png"},
 
-        { brand: "Mitsubishi", type: "SUV", transmission: "-", model: "Pajero", year: "-", price: "Rp300k/hari", image: "assets/img/car-mitsubishi-pajero.png" },
+        { brand: "Mitsubishi", type: "SUV", transmission: "-", model: "Pajero", year: "-", price: "-", image: "assets/img/car-mitsubishi-pajero.png" },
         // Add other vehicle data as needed
     ];
 
@@ -245,6 +245,50 @@ let progressValue = document.getElementById("progress-value");
         filteredVehicles.forEach((vehicle) => {
             const vehicleItem = document.createElement("div");
             vehicleItem.classList.add("vehicle-item");
+            
+            if (vehicle.model === "Pajero" || vehicle.model === "Fortuner" || vehicle.model == "Alphard") {
+                vehicleItem.innerHTML = `
+                <div class="card-cars-coming-soon">
+                    <div class="card-cars-border-coming-soon">  </div>
+                    <div class="card-cars-main">
+                        <p><img src="${vehicle.image}" class="img-cars-coming-soon"></p>
+
+                        <div class="main-desc-coming-soon">
+                            <p class="brand">${vehicle.brand}</p>
+                            <p class="model">${vehicle.model}</p>
+
+                            <div class="card-card-three-icon">
+                                <div class="tipe">
+                                    <img src="assets/icon/icon-cars.png">
+                                    ${vehicle.type}
+                                </div>
+                                <div class="tahun">
+                                    <img src="assets/icon/calendar_ffffff.png">
+                                    ${vehicle.year}   
+                                </div>
+                                <div class="transmisi">
+                                    <img src="assets/icon/transmisi.png">
+                                    ${vehicle.transmission}   
+                                </div>
+                            </div>
+                            
+                            <p class="price">${vehicle.price}</p>  
+                        </div>
+                        
+                        <p class="p-booking-coming-soon2">
+                            <a  class="booking" href="https://www.iconfinder.com/search?q=calendar">Pesan</a>
+                        </p>
+                        <p class="p-booking-coming-soon">
+                            Segera Tersedia
+                        </p>
+                    </div>
+                </div>
+                `;
+                
+            } 
+            else{
+
+            
             vehicleItem.innerHTML = `
                     <div class="card-cars">
                         <div class="card-cars-border">
@@ -282,6 +326,7 @@ let progressValue = document.getElementById("progress-value");
                         </div>
                     </div>
             `;
+            }
             vehicleList.appendChild(vehicleItem);
         });
     }
@@ -300,14 +345,14 @@ let progressValue = document.getElementById("progress-value");
 
 
 const motor = [
-            { brand: "Honda", transmission: "Automatic", model: "Beat", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-honda-beat.png"},
-            { brand: "Honda", transmission: "Automatic", model: "Pcx", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-honda-pcx.png" },
-            { brand: "Honda", transmission: "Automatic", model: "Scoopy", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-honda-scoopy.png" },
-            { brand: "Honda", transmission: "Automatic", model: "Vario", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-honda-vario.png" },
-            { brand: "Yamaha", transmission: "Automatic", model: "Aerox", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-yamaha-aerox.png" },
-            { brand: "Yamaha", transmission: "Automatic", model: "Mio z", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-yamaha-mioz.png" },
-            { brand: "Yamaha", transmission: "Automatic", model: "Nmax", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-yamaha-nmax.png" },
-            { brand: "Suzuki", transmission: "Automatic", model: "Nex", year: 2022, price: "Rp100k/hari", image: "assets/img/motor-suzuki-nex.png" }
+            { brand: "Honda", transmission: "Automatic", model: "Beat", year: 2022, price: "Rp120k/hari", image: "assets/img/motor-honda-beat.png"},
+            { brand: "Honda", transmission: "Automatic", model: "Pcx", year: 2022, price: "Rp150k/hari", image: "assets/img/motor-honda-pcx.png" },
+            { brand: "Honda", transmission: "Automatic", model: "Scoopy", year: 2022, price: "Rp120k/hari", image: "assets/img/motor-honda-scoopy.png" },
+            { brand: "Honda", transmission: "Automatic", model: "Vario", year: 2022, price: "Rp120k/hari", image: "assets/img/motor-honda-vario.png" },
+            { brand: "Yamaha", transmission: "Automatic", model: "Aerox", year: 2022, price: "Rp150k/hari", image: "assets/img/motor-yamaha-aerox.png" },
+            { brand: "Yamaha", transmission: "Automatic", model: "Mio z", year: 2022, price: "Rp120k/hari", image: "assets/img/motor-yamaha-mioz.png" },
+            { brand: "Yamaha", transmission: "Automatic", model: "Nmax", year: 2022, price: "Rp150k/hari", image: "assets/img/motor-yamaha-nmax.png" },
+            { brand: "Suzuki", transmission: "Automatic", model: "Nex", year: 2022, price: "Rp120k/hari", image: "assets/img/motor-suzuki-nex.png" }
         ];
 
         const motorList = document.getElementById("motorList");
