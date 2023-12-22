@@ -534,6 +534,10 @@ body{
         margin-right: 5px;
         /* background-color: #dcdcdc; */
     }
+    .tahun{
+        width: 14vw;
+        /* background-color: #fa3f3f; */
+    }
 
 
 
@@ -2177,7 +2181,7 @@ body{
         background-color: #212330;
         position: fixed;
         width: 100%;
-        z-index: 10;
+        z-index: 30;
         border-bottom: 1px solid #cfcfcf;
     }
     .navbar .navbar-child{
@@ -2269,8 +2273,14 @@ body{
         background-color: #FFE243;
         font-size: 1.6vw;
         color:#2F3243;
+        transition: all 0.2s ease;
+        border: 1px solid #FFE243;
     }
-
+    .home button:hover{
+        background-color:#FFE243;
+        border: 1px solid #FFE243;
+        color: #ffff;
+    }
 
 
 
@@ -2569,7 +2579,7 @@ body{
             /* margin:0px 20px 0 20px; */
             border-radius: 15px;
             font-size: 3vh;
-            transition: all 0.2s ease-in;
+            transition: all .2s ease-in;
             font-weight: 600;
             /* background-color: yellow; */
         }
@@ -2613,7 +2623,7 @@ body{
         width: 40vw;
         /* height: 95%; */
         /* background-color: #6e78ff6c; */
-        margin: 5% 0 5% 15px;
+        margin: 5% 0px 5% 15px;
         position: relative;
         right: 0;
         display: flex;
@@ -2667,6 +2677,21 @@ body{
         text-align: center;
         opacity: 0;
         z-index: 20;
+        /* width: 1vw; */
+    }
+    .card-cars-main .booking{
+        border: 2px solid #FFE243;
+        justify-content: center;
+        text-align: center; 
+        color: #ffffff;
+        text-decoration: none;
+        padding: .1vw 1vw .3vw 1vw;
+        /* margin:0px 20px 0 20px; */
+        border-radius: 15px;
+        font-size: 3vh;
+        transition: all .2s ease-in;
+        font-weight: 600;
+        /* background-color: yellow; */
     }
 
     .card-card-three-icon{
@@ -2923,7 +2948,7 @@ body{
         place-items: center;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
+        cursor: pointer;    
     }
     #progress-value {
         display: block;
